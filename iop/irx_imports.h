@@ -1,0 +1,9 @@
+#pragma once
+#include <irx.h>
+#include <loadcore.h>
+#include <secrman.h>
+#include <sifcmd.h>
+#include <sifman.h>
+#include <ssbusc.h>
+#include <sysclib.h>
+#include <thbase.h>
