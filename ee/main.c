@@ -138,6 +138,10 @@ static uint8_t* decrypt_kelf(const uint8_t* kelf, uint32_t size) {
         return NULL;
     }
     SecrBitTable_t bit = rpc.bit;
+    if (bit.header.block_count > sizeof(bit.blocks) / sizeof(bit.blocks[0])) {
+        log_msg("  too many blocks (%u)\n", bit.header.block_count);
+        return NULL;
+    }
     uint8_t* out = malloc(size);
     if (!out) return NULL;
     memcpy(out, kelf, size);
