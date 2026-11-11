@@ -14,3 +14,7 @@ make
 
 ## Usage
 Run using a loader such as [wLaunchELF](https://github.com/ps2homebrew/wLaunchELF). Files will be dumped to the `KELFDUMP` directory on your USB drive.
+
+### Notes
+
+* Only tested on my own hardware, would appreciate feedback from others :)
