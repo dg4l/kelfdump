@@ -3,6 +3,7 @@ IRX = sio2man padman iomanX fileXio usbd bdm bdmfs_fatfs usbmass_bd kelfdump
 EE_BIN = kelfdump.elf
 EE_OBJS = ee/main.o ee/erom.o $(IRX:%=irx/%_irx.o)
 EE_LIBS = -lpad -lfileXio -lpatches -ldebug
+EE_CFLAGS = -Wunused -Wunused-parameter
 
 all: $(EE_BIN)
 

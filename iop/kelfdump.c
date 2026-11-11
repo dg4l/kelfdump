@@ -12,6 +12,7 @@ static uint32_t size_from_delay(int dev) {
 }
 
 static void* handler(int fn, void* data, int size) {
+    (void)size;
     KdRpc* p = data;
     switch (fn) {
         case KD_INFO:
@@ -34,6 +35,7 @@ static void* handler(int fn, void* data, int size) {
 }
 
 static void rpc_thread(void* arg) {
+    (void)arg;
     if (!sceSifCheckInit()) sceSifInit();
     sceSifInitRpc(0);
     sceSifSetRpcQueue(&queue, GetThreadId());
@@ -42,6 +44,8 @@ static void rpc_thread(void* arg) {
 }
 
 int _start(int argc, char* argv[]) {
+    (void)argc;
+    (void)argv;
     iop_thread_t thread = {
         .attr = TH_C,
         .thread = &rpc_thread,

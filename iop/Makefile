@@ -1,5 +1,6 @@
 IOP_BIN = kelfdump.irx
 IOP_OBJS = kelfdump.o imports.o
+IOP_CFLAGS = -Wunused -Wunused-parameter
 
 all: $(IOP_BIN)
 
