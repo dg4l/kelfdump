@@ -27,6 +27,7 @@
 #define IRX(name) \
     extern unsigned char name##_irx[]; \
     extern unsigned int size_##name##_irx;
+
 IRX(sio2man)
 IRX(padman)
 IRX(iomanX)
