@@ -18,3 +18,6 @@ Run using a loader such as [wLaunchELF](https://github.com/ps2homebrew/wLaunchEL
 ### Notes
 
 * Only tested on my own hardware, would appreciate feedback from others :)
+
+### TODO
+* Maybe add a nice background picture :)
