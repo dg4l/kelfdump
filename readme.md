@@ -1,5 +1,5 @@
 # kelfdump
-PS2 homebrew to dump decrypted KELFs using the mechacon
+PS2 homebrew to dump decrypted KELFs using the MechaCon
 
 ## Building
 You need the [ps2dev toolchain](https://github.com/ps2dev/ps2dev)
